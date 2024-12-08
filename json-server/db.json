@@ -1,0 +1,98 @@
+{
+  "groups": [
+    {
+      "id": 1,
+      "number": "1"
+    },
+    {
+      "id": 2,
+      "number": "2"
+    },
+    {
+      "id": 3,
+      "number": "3"
+    },
+    {
+      "id": 4,
+      "number": "4"
+    }
+  ],
+  "students": [
+    {
+      "id": 1,
+      "name": "Иван Иванов 1",
+      "birthYear": 2005,
+      "groupId": 1,
+      "course": 2,
+      "enrollmentYear": 2021
+    },
+    {
+      "id": 2,
+      "name": "Мария Петрова",
+      "birthYear": 2004,
+      "groupId": 1,
+      "course": 3,
+      "enrollmentYear": 2020
+    },
+    {
+      "id": 3,
+      "name": "Сергей Сидоров",
+      "birthYear": 2006,
+      "groupId": 2,
+      "course": 1,
+      "enrollmentYear": 2022
+    },
+    {
+      "id": 4,
+      "name": "Борис Шагунов",
+      "birthYear": 2001,
+      "groupId": 2,
+      "course": 1,
+      "enrollmentYear": 2022
+    },
+    {
+      "id": 5,
+      "name": "Федор Измайлов",
+      "birthYear": 2000,
+      "groupId": 2,
+      "course": 1,
+      "enrollmentYear": 2022
+    },
+    {
+      "name": "Новый",
+      "birthYear": 2000,
+      "groupId": 1,
+      "id": 6
+    },
+    {
+      "name": "Новый",
+      "birthYear": 2009,
+      "groupId": 6133,
+      "id": 7
+    },
+    {
+      "name": "Новый",
+      "birthYear": 2009,
+      "groupId": 3,
+      "id": 8
+    },
+    {
+      "name": "выф",
+      "birthYear": 2023,
+      "groupId": 2,
+      "id": 9
+    },
+    {
+      "name": "Новый студент",
+      "birthYear": 2002,
+      "groupId": 3,
+      "id": 10
+    },
+    {
+      "name": "Нормальное имя",
+      "birthYear": 2002,
+      "groupId": 1,
+      "id": 11
+    }
+  ]
+}

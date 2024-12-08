@@ -1,0 +1,63 @@
+div {
+  padding: 20px;
+  margin: 0 auto;
+  max-width: 500px;
+  background-color: #f0f4f8;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  font-family: 'Arial', sans-serif;
+}
+
+h1 {
+  text-align: center;
+  font-size: 2rem;
+  color: #2c3e50;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+  letter-spacing: 1.2px;
+}
+
+p {
+  font-size: 1.2rem;
+  color: #34495e;
+  margin: 10px 0;
+  text-align: center;
+  line-height: 1.6;
+}
+
+/* Стили для дропдауна */
+select {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  margin: 20px 0;
+  font-size: 1rem;
+  border: 1px solid #dce1e8;
+  border-radius: 5px;
+  background-color: #ffffff;
+  color: #34495e;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+
+/* Стили для списка студентов */
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 20px 0;
+}
+
+li {
+  font-size: 1.1rem;
+  color: #34495e;
+  padding: 10px;
+  border-bottom: 1px solid #e1e8ed;
+}
+
+li:last-child {
+  border-bottom: none;
+}
+
+/* Дополнительный стиль для курсива */
+li[style*="font-style: italic"] {
+  color: #8e44ad; /* Добавим акцентный цвет для студентов младше 18 лет */
+}

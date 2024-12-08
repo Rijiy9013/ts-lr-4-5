@@ -1,0 +1,7 @@
+<div>
+    <h1>Приветствие</h1>
+    <input [(ngModel)]="userName" placeholder="Введите ваше имя" (keydown.enter)="greet()" />
+    <button (click)="greet()">Поздороваться</button>
+    <p *ngIf="greetingMessage">{{ greetingMessage }}</p>
+  </div>
+  

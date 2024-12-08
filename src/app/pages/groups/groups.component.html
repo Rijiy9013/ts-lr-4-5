@@ -1,0 +1,27 @@
+<div>
+  <h1>Группы</h1>
+
+  <!-- Информация о выбранной группе -->
+  <p *ngIf="selectedGroupId !== null">Номер вашей группы: {{ currentGroupNumber }}</p>
+  <p *ngIf="selectedGroupId === null">Группа не выбрана</p>
+
+  <!-- Выпадающий список для выбора группы -->
+  <select (change)="onGroupChange($event)" [value]="selectedGroupId || ''">
+    <option value="" disabled>Выберите группу</option>
+    <option *ngFor="let group of groups" [value]="group.id">
+      {{ group.number }}
+    </option>
+  </select>
+
+  <!-- Список студентов -->
+  <h2>Студенты</h2>
+  <ul>
+    <li *ngFor="let student of students" [appAgeItalic]="student.birthYear">
+      {{ student.name }} - {{ student.birthYear | birthCentury }}
+      <button (click)="editStudent(student.id)">Редактировать</button>
+    </li>
+  </ul>
+
+  <!-- Кнопка для добавления студента -->
+  <button (click)="navigateToAddStudent()">Добавить студента</button>
+</div>

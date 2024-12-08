@@ -1,0 +1,25 @@
+<div class="form-container">
+    <h1>Добавление нового студента</h1>
+    <form [formGroup]="studentForm" (ngSubmit)="onSubmit()">
+      <label for="name">Имя студента:</label>
+      <input id="name" formControlName="name" />
+      <div *ngIf="studentForm.get('name')?.invalid && studentForm.get('name')?.touched">
+        <small>Введите корректное имя</small>
+      </div>
+  
+      <label for="birthYear">Год рождения:</label>
+      <input id="birthYear" formControlName="birthYear" type="number" />
+      <div *ngIf="studentForm.get('birthYear')?.invalid && studentForm.get('birthYear')?.touched">
+        <small>Введите год в диапазоне от 1900 до {{ currentYear }}</small>
+      </div>
+  
+      <label for="groupId">Группа:</label>
+      <input id="groupId" formControlName="groupId" type="number" />
+      <div *ngIf="studentForm.get('groupId')?.invalid && studentForm.get('groupId')?.touched">
+        <small>Укажите группу</small>
+      </div>
+  
+      <button type="submit" [disabled]="studentForm.invalid">Сохранить</button>
+    </form>
+  </div>
+  

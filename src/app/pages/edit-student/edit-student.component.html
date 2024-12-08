@@ -1,0 +1,47 @@
+<div class="form-container">
+    <h1>Редактирование студента</h1>
+    <form #editForm="ngForm" (ngSubmit)="onSubmit()">
+      <label for="name">Имя студента:</label>
+      <input
+        id="name"
+        name="name"
+        [(ngModel)]="student.name"
+        #name="ngModel"
+        required
+      />
+      <div *ngIf="name.invalid && name.touched">
+        <small>Введите корректное имя</small>
+      </div>
+  
+      <label for="birthYear">Год рождения:</label>
+      <input
+        id="birthYear"
+        name="birthYear"
+        type="number"
+        [(ngModel)]="student.birthYear"
+        #birthYear="ngModel"
+        required
+        min="1900"
+        [max]="currentYear"
+      />
+      <div *ngIf="birthYear.invalid && birthYear.touched">
+        <small>Введите год в диапазоне от 1900 до {{ currentYear }}</small>
+      </div>
+  
+      <label for="groupId">Группа:</label>
+      <input
+        id="groupId"
+        name="groupId"
+        type="number"
+        [(ngModel)]="student.groupId"
+        #groupId="ngModel"
+        required
+      />
+      <div *ngIf="groupId.invalid && groupId.touched">
+        <small>Укажите группу</small>
+      </div>
+  
+      <button type="submit" [disabled]="editForm.invalid">Сохранить</button>
+    </form>
+  </div>
+  
